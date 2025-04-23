@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo{
+        height: 130px;
+        width: 100px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6B8E23;
+        
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 40px;
+        align-items: center;
+        font-size: 22px;
+        font-weight:bold;
+    }
+    .list>a{
+        text-decoration: none;
+        color: black;
+    }
+    .list>li:hover{
+        background: #FFD700;
+        height: 70px;
+        align-content: center;
+    }
+    .list>a:hover{
+        background: #FFD700;
+        height: 70px;
+        align-content: center;
+    }
+    .navicon{
+        font-size: 30px;
+        margin-right: 60px;
+    }
+    .navicon1{
+        font-size: 30px;
+    }
+
+    /* section */
+
+    .heading1{
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        font-size: 20px;
+        font-weight:bold;
+        background-color: #FFD700;
+        padding: 15px;
+    }
+    .heading1>div>a{
+        text-decoration:none;
+        color: black;
+    }
+
+    .heading2{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .heading3{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .best{
+        display: flex;
+        margin: 40px;
+        gap: 60px;
+        overflow:auto;
+    }
+   
+    .card10>div{
+        padding: 5px;
+        width: 300px;
+        height: 250px;
+    }
+    .card10>h1{
+        padding: 5px;
+        margin: 20px 0px;
+        text-align: center; 
+        background-color: #6B8E23;
+        border-radius: 10px;
+        color: white;
+    }
+    .card10>div>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .row1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        text-align: center;
+        gap: 40px;
+        margin: 40px;
+    }
+    .col-3>div{
+        width: 200px;
+        height: 200px;
+        margin-left: 40px;
+       
+    }
+
+    .col-3>h3{
+        padding: 5px;
+        margin: 20px 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .roundimage{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow:1px 2px 5px 8px #FFD700;
+    }
+    .roundimage:hover{
+        height:220px;
+        width: 220px;
+        border-radius: 50%;
+    }
+
+    .row2{
+        display: flex;
+        padding: 20px;
+        gap: 30px;
+    }
+    .row3{
+        display: flex;
+        padding: 20px;
+    }
+    .col-7{
+        margin-top: 50px;
+    }
+    .col-7>button{
+        padding: 10px;
+        width: 200px;
+        margin-left: 80px;
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color:#6B8E23;
+    }
+    .row5{
+        margin: 20px 0px;
+        display: flex;
+        background:linear-gradient(to left, rgba(0, 0, 0, 0),rgb(97, 138, 2));
+    }
+    .col-6{
+        padding: 30px;
+        width: 700px;
+        text-align: center;
+    }
+    .col-6>p{
+        font-size: 22px;
+
+    }
+    .col-6>button{
+        padding: 10px;
+        width: 200px;
+        margin: 20px;
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        color: green;
+        background-color: rgb(215, 211, 211);
+    }
+
+    .row7{
+        display: flex;
+        background-color: #6B8E23;
+        color: white;
+        font-weight: bold;
+    }
+    .col-4{
+        display: flex;
+        padding: 40px; 
+        width: 500px;
+    }
+    .col9{
+        padding: 40px;
+        width: 500px;
+    }
+    .col10{
+        padding: 40px;
+    }
+
+    .div2{
+        margin-left: 20px;
+    }
+
+    .p2{
+        padding-top: 40px;
+    }
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .best {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .row1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .row2{
+        text-align: center;
+    }
+
+    .heading1{
+        align-items: center;
+    }
+    .best{
+        margin: 0px;
+    }
+    .card10{
+        width: 90%;
+    }
+    .card10>div>img{
+        width: 95%;
+    }
+
+    .col-6>img{
+        display: none;
+    }
+   .col-7{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+   }
+   .col-7>button{
+    width: 40%;
+    margin-right: 150px;
+   }
+    .col-3 {
+        width: 100%;
+    }
+
+    .navicon {
+        margin-right: 20px;
+    }
+
+    .heading1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .row7{
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+    .col-4{
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    .col-4>div>img{
+        width: 50%;
+        height: 50%;
+        margin-left: 100px;
+    }
+    .col10{
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    .col9{
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .navbar {
+        flex-direction: row; 
+    }
+
+    .list {
+        flex-direction: row; 
+    }
+
+    .best {
+        flex-direction: row; 
+    }
+
+    .row1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-3 {
+        width: 200px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px; 
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .best {
+        gap: 40px;
+    }
+
+    .row1 {
+        gap: 40px;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a  href="index.html"><img src="Images/MN__2_-removebg-preview.png" alt="" width="150%"></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <select name="" id="">
+                    <option value="">Teas & Infusions</option>
+                    <option value=""></option>
+                    <option value="">Staple & Packed Foods</option>
+                    <option value="">Pulses & Dhals</option>
+                    <option value="">Personal Care</option>
+                    <option value="">Detox</option>
+                    </select>
+                </li>
+                <a href=""><li class="">Track Order</li></a>
+                <a href="tea19.html"><li>About Us</li></a>
+                <a href="tea46.html"><li>Contact Us</li></a>
+                <a href="tea4.html"><li>Support</li></a>
+            </ul>
+            <div class="navicon">
+                <a href="tea17.html" class="navicon1"><i class='bx bxs-user' style='color:#fffb45'  ></i></a>
+                <i class='bx bxs-cart' style='color:#f9f544'  ></i>
+            </div>
+        </nav>
+    </header>
+    <section class="heading1">
+        <div><a href="tea5.html">Live Q&A Sections</a></div>
+        <div><a href="">Organic Lifestyle Tips</a></div>
+    </section>
+    
+    <div class="carosal">
+        <div class="mySlides fade">
+            <img src="Images/FLAX-FACTS_-6-BENEFITS-YOU-NEED-TO-KNOW-ABOUT-FLAXSEED-1.png" alt="" style="width:100%">
+        </div>
+        <!-- <div class="mySlides fade">
+            <img src="Images/images (1).jpeg" alt="" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="Images/Staple 7.png" alt="" style="width:100%">
+        </div> -->
+    </div>
+    
+    <div >
+        <h1 class="heading2">Best Selling Products</h1>
+        <div class="best">
+            <div class="card10">
+                <div>
+                    <img src="Images/360_F_298570116_8H0YLZyPSvmRxEkd4AA1mTthBgTlPQqO.jpg" alt="">
+                </div>
+                <h1> Moringa Powder</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/10.png" alt="">
+                </div>
+                <h1> Health Capsules</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/9.png" alt="">
+                </div>
+                <h1> Aswagandha</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/organic-india-classic-tulsi-green-tea-bags-1-74-g-25-pcs-product-images-o490058565-p490058565-6-202307031247.png" alt="">
+                </div>
+                <h1>Organic Tea</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/Staple 4.png" alt="">
+                </div>
+                <h1>Organic Ghee</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/Staple 5.png" alt="">
+                </div>
+                <h1> Coconut Oil</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/Tea 5.png" alt="">
+                </div>
+                <h1>Hibiscus Tea</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/Dhal 2.png" alt="">
+                </div>
+                <h1>Dhals</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/CleanNEW7DAY.webp" alt="">
+                </div>
+                <h1>Detox</h1>
+            </div>
+            <div class="card10">
+                <div>
+                    <img src="Images/Skin_Care_Blog_File.webp" alt="">
+                </div>
+                <h1>Personal Care</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="heading3">Our Products</h1>
+        <div class="row1">
+            <div class="col-3">
+                <div class="counddiv">
+                <a href="tea22.html"><img class="roundimage" src="/Images/organic-india-classic-tulsi-green-tea-bags-1-74-g-25-pcs-product-images-o490058565-p490058565-6-202307031247.png" alt="" ></a>
+                </div>
+                <h3>Teas & Infusions</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                <a href="tea23.html"><img  class="roundimage" src="Images/Health 3.png" alt=""></a>
+                </div>
+                <h3>Health & Wellness</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                    <a href="tea24.html"><img class="roundimage" src="Images/1_121_11zon.webp" alt=""></a>
+                </div>
+                <h3>Staple & Packed Foods</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                    <a href="tea23.html"><img class="roundimage" src="Images/blacksoysos.webp" alt=""></a>
+                </div>
+                <h3>Health Foods</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                    <a href="tea25.html"><img class="roundimage" src="Images/Organic_Pulses_online_1200x1200.webp" alt=""></a>
+                </div>
+                <h3>Pulses & Dhals</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                <a href="tea26.html"><img class="roundimage" src="Images/Skin_Care_Blog_File.webp" alt=""></a>
+                </div>
+                <h3>Personal Care</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                <a href="tea27.html"><img class="roundimage" src="Images/CleanNEW7DAY.webp" alt=""></a>
+                </div>
+                <h3>Detox</h3>
+            </div>
+            <div class="col-3">
+                <div class="counddiv">
+                <img class="roundimage" src="Images/avaan-mens-perfume-50-ml-verified-sustainable-perfume-on-brown-living-210195.webp" alt="">
+                </div>
+                <h3>Perfume</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section>
+    <div class="row2">
+        <div class="col-5">
+            <img src="Images/image 34.png" alt="" width="100%">
+        </div>
+        <div class="col-7">
+            <h1>GET THE 'TULSI' Wellness EDGE</h1>
+            <div class="">
+            <div class="row3">
+                <img src="Images/image 35.png" alt="" >
+                <div>
+                <h2>Gurd against cough,cold & Pollution</h2>
+                <p>Tulsi is long known to have anti-inflamatory</p>
+                </div>
+            </div>
+            <div class="row3">
+                <img src="Images/image 36.png" alt="">
+                <div>
+                <h2>FIGHT STRESS</h2>
+                <p>Tulsi is long known to have anti-inflamatory</p>
+                </div>
+            </div>
+            <div class="row3">
+                <img src="Images/image 37.png" alt="">
+                <div>
+                <h2>SUPPORT METABOLISM</h2>
+                <p>Tulsi is long known to have anti-inflamatory</p>
+                </div>
+            </div>
+           </div>
+            <button>Shop Now</button>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="row5">
+        <div class="col-6">
+            <h2>HEALTHY CONSCIOUS LIVING</h2>
+            <p>Healthy conscious Living includes conscious bussiness practices to ensure our impact on our world and communities is a positive one.at the foundation of ORGANIC INDIA's products,company, and sourcing is regenerative agriculture that not only sustains but replenishes the earth; fair trade practices that support an honour farmer partners with equitable wages,health care,and ongoing organic agrcultural training; and a LEED Plantinum certified production facility that is a marvel of top-tier sustainable design, construction, and operations.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="col-6">
+            <img src="Images/pixelcut-export_fb8a1cef-ce02-40b5-ae4d-1cb42965945b.webp" alt="" width="100%">
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="row7">
+        <div class="col-4">
+            <div>
+                <img src="Images/MN__2_-removebg-preview.png" alt="" width="80%">
+            </div>
+            <div>
+                <h3>INFORMATION</h3>
+                <p>About Us <br>Contact Us<br>Terms & Conditions<br>Terms of Service<br>Vision & Mission<br>FAQ's</p>
+            </div>
+        </div>
+        <div class="col9">
+            <div class="div2">
+                <h3>POLICY:</h3>
+                <p>Privacy Policy <br>Vision & Mission<br>Our Herb<br>Track your Orders</p>
+            </div>
+            <div>
+                <P class="p2">Follow Us @ 
+                    <img src="Images/Youtube.png" alt="">
+                    <img src="Images/Whatsapp.png" alt="">
+                    <img src="Images/Instagram.png" alt="">
+                    <img src="Images/Facebook.png" alt="">
+                    <img src="Images/Twitter.png" alt="">
+                </P>
+                <p>Copyright 2024 MN Organic India Pvt.Ltd</p>
+            </div>
+        </div>
+        <div class="col10">
+            <h3>Contact Us</h3>
+            <p><img src="Images/71-512-removebg-preview.png" alt="" width="10%">
+                info@mnorganicproducts.com
+            </p>
+            <p><img src="Images/9946328-removebg-preview.png" alt="" width="10%">
+                +91 9123456789
+            </p>
+            <p><img src="Images/free-yellow-circle-mail-symbol-icon-20547-thumb-removebg-preview.png" alt="" width="10%">
+                MN ORGANIC INDIA Pvt.Ltd.<br>
+                Unit No.123.7th Floor, Tower-B,<br>
+                XXX Towers ABC Nager<br>
+                Chennai-XXXXXX
+            </p>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

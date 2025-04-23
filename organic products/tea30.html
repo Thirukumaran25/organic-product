@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: black;
+    }
+    .card{
+        background-color: white;
+        width: 600px;
+        margin-left: 330PX;
+        border-radius: 10px;
+    }
+    .subbox1{
+        padding: 20px;
+        display: flex;
+        margin: 5px 0px;
+    }
+    .subbox1>div>img{
+        border: 1px solid black;
+        width: 200px;
+    }
+    .dtl{
+        align-content: center;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .spn1{
+        border: 1px solid black;
+        margin: 10px 0px;
+        width: 140px;
+        background-color: white;
+        font-size: 25px;
+    }
+    .spn1>i{
+        margin: 3px;
+    }
+
+    .head{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #6B8E23;
+    }
+    .head>i{
+        font-size: 60px;
+    }
+
+    .coupon{
+        border: 1px solid green;
+        padding: 20px;
+        margin: 20px;
+        border-radius:10px;
+    }
+
+    .coupon>input{
+        width: 430px;
+        height: 40px;
+        border: none;
+        font-size: 25px;
+    }
+    .coupon>button{
+        background-color: #6B8E23;
+        font-weight: bold;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .product>p{
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .total{
+        display: flex;
+        padding: 40px;
+        border-top: 1px solid black;
+    }
+    .total>div>p{
+        font-size: 35px;
+    }
+    .total>a>button{
+        width: 320px;
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+        background-color: #6B8E23;
+        border: none;
+    }
+
+    .track{
+        display: flex;
+        margin: 40px;
+        gap: 50px;
+        margin-left: 120px;
+        position: relative;
+    }
+
+    .track::after{
+        content: "";
+       background-color: black;
+       position: absolute;
+       display: block;
+       transition: all 0.3s ease-in;
+       width: 300px;
+       height: 2px;
+       left: 20px;
+       top: 10px;
+    }
+    .track>div>button{
+        width: 20px;
+        border-radius: 10px;
+        height: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .track>div{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .trackpro1>button{
+        background-color: #6B8E23;
+    }
+
+    
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.card {
+    background-color: white;
+    width: 600px;
+    margin-left: 330px;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin-left: 5%; 
+    }
+
+    .subbox1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .subbox1 > div > img {
+        width: 100%; 
+    }
+
+    .coupon > input {
+        width: 100%;
+    }
+
+    .total {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .total > div > p {
+        font-size: 25px; 
+    }
+
+    .total > a > button {
+        width: 100%; 
+        margin-left: 0; 
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .head > h1 {
+        font-size: 24px; 
+    }
+
+    .head > i {
+        font-size: 40px;
+    }
+
+    .dtl {
+        font-size: 18px; 
+    }
+
+    .spn1 {
+        font-size: 20px; 
+    }
+
+    .coupon > button {
+        font-size: 18px; 
+    }
+
+    .total > div > p {
+        font-size: 20px; 
+    }
+    
+}
+
+</style>
+<body>
+    <div class="card">
+        <div class="head">
+            <h1><i class='bx bxs-cart' style='color:#f9f544'  ></i>Your Cart (1 item)</h1>
+            <a href="index.html"><i class='bx bx-x'></i></a>
+        </div>
+        <div class="track">
+            <div class="trackpro1">
+                <button></button>
+                <span>Cart</span>
+            </div>
+            <div class="trackpro">
+                <button></button>
+                <span>Payment</span>
+            </div>
+            <div class="trackpro">
+                <button></button>
+                <span>Checkout</span>
+            </div>
+            <div class="trackpro">
+                <button></button>
+                <span>Confirmed</span>
+            </div>
+        </div>
+        <div class="product">
+            <div class="subbox1">
+                <div>
+                    <img src="Images/Tea.png" alt="">
+                </div>
+                <div class="dtl">
+                <h3>TULSI CLASSIC GREEN TEA</h3>
+                <h3>250Gms</h3>
+                <p class="spn1">Qty: <i class='bx bx-trash'></i>1<i class='bx bx-plus-circle'></i></p>
+                ₹215.00
+                </div>
+            </div>
+            <div class="coupon">
+                <input type="text" placeholder="Apply Coupon">
+                <button>APPLY</button>
+            </div>
+            <p><i class='bx bx-food-tag'></i>Keep Me Posted About Sales And Offers</p>
+        </div>
+        <div class="total">
+            <div>
+                <p>₹215</p>
+                <h3>Estimated Total</h3>
+            </div>
+            <a href="tea47.html"><button>Check Out</button></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: black;
+    }
+    .card{
+        text-align: center;
+        margin: 0px 110px;
+        background-color: #6B8E23;
+        padding-bottom: 100px;
+    }
+    .form{
+        display: flex;  
+    }
+    .index{
+        padding: 50px;
+        width: 120%;
+    }
+    .index>input{
+        width: 95%;
+        height: 60px;
+        margin: 20px;
+        background-color: #FFD700;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+    }
+    #ip3{
+        height: 150px;
+    }
+    .index1{
+        padding: 50px;
+        width: 25%;
+    }
+    .index1>img{margin-top: 100px;
+        width: 350px;
+        
+    }
+    button{
+        background-color: #FFD700;
+        padding: 10px;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+        width: 150px;
+        font-weight: bold;
+    }
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .card {
+        margin: 0 20px; /* Reduce margin for smaller screens */
+    }
+
+    .form {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .index1 {
+        width: 80%; /* Adjust width for the image container */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .index {
+        width: 100%; /* Full width for the input container */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .index > input {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    button {
+        width: 100%; /* Full width for button */
+        font-size: 20px; /* Adjust font size */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .index1 > img {
+        width: 80%; /* Make image responsive */
+        margin-top: 50px; /* Adjust margin */
+    }
+
+    .index > input {
+        font-size: 16px; /* Further adjust font size */
+    }
+
+    button {
+        font-size: 18px; /* Adjust button font size */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+}
+</style>
+<body>
+    <div class="card">
+       <div class="form">
+            <div class="index1">
+                <img src="/Images/MN__2_-removebg-preview.png" alt="">
+            </div>
+            <div class="index">
+                <h1>WE CARE FOR YOU!!</h1>
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Mobile"><br>
+                <input id="ip3" type="text" placeholder="Message"><br>
+                <button>SUBMIT</button>
+            </div>
+       </div>
+    </div>
+</body>
+</html>

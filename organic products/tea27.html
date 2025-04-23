@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo{
+        height: 130px;
+        width: 100px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6B8E23;
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 40px;
+        align-items: center;
+        font-size: 22px;
+        font-weight:bold;
+    }
+    .navicon{
+        font-size: 30px;
+        margin-right: 60px;
+    }
+    .navicon1{
+        font-size: 30px;
+    }
+
+    /* section */
+    .banimg>img{
+        width: 100%;
+    }
+/* main section */
+
+.main{
+    display: flex;
+}
+
+.categorie{
+    border: 2px solid green;
+    margin: 20px;
+    width: 300px;
+    padding: 10px;
+}
+.categorie>ul{
+    margin-left: 50px;
+}
+
+.categorie>h2{
+    padding: 8px;
+}
+
+.boxhead{
+    text-align: center;
+    margin: 40px;
+}
+.items{
+    display: flex;
+    margin-left: 100px;
+}
+
+.subitem{
+    border: 2px solid green;
+    width: 230px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.subitem>img{
+    width: 210px;
+    height: 200px;
+}
+.cartbtn{
+    background-color: #6B8E23;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+}
+.cartbtn:hover{
+    background-color: rgb(255, 215, 0);
+}
+/* footer */
+    .row7{
+        display: flex;
+        background-color: #6B8E23;
+        color: white;
+        font-weight: bold;
+    }
+    .col-4{
+        display: flex;
+        padding: 40px; 
+        width: 500px;
+    }
+    .col9{
+        padding: 40px;
+        width: 500px;
+    }
+    .col10{
+        padding: 40px;
+    }
+
+    .div2{
+        margin-left: 20px;
+    }
+
+    .p2{
+        padding-top: 40px;
+    }
+    .list>a{
+        text-decoration: none;
+        color: black;
+    }
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list {
+        flex-direction: column; 
+        gap: 20px; 
+        font-size: 18px; 
+    }
+
+    .main {
+        flex-direction: column; 
+    }
+
+    .categorie {
+        width: 100%; 
+    }
+
+    .items {
+        flex-direction: column; 
+        margin-left: 0; 
+    }
+
+    .subitem {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .row7 {
+        flex-direction: column; 
+        padding: 20px; 
+    }
+
+    .col-4, .col9, .col10 {
+        width: 100%;
+        padding: 10px; 
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px; 
+        align-items: center;
+    }
+
+    .list {
+        font-size: 16px; 
+    }
+
+    .main > h1 {
+        font-size: 24px; 
+    }
+
+    .boxhead {
+        font-size: 20px; 
+    }
+
+    .subitem > img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .row7 {
+        padding: 10px; 
+    }
+
+    .col-4, .col9, .col10 {
+        padding: 5px;
+    }
+    .categorie {
+        width: 80%;
+    }
+    .items {
+        grid-template-columns:1fr; 
+        width: 90%;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a  href="index.html"><img src="Images/MN__2_-removebg-preview.png" alt="" width="150%"></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <select name="" id="">
+                    <option value="">Teas & Infusions</option>
+                    <option value=""></option>
+                    <option value="">Staple & Packed Foods</option>
+                    <option value="">Pulses & Dhals</option>
+                    <option value="">Personal Care</option>
+                    <option value="">Detox</option>
+                    </select>
+                </li>
+                <a href=""><li class="">Track Order</li></a>
+                <a href="tea19.html"><li>About Us</li></a>
+                <a href="tea46.html"><li>Contact Us</li></a>
+                <a href="tea4.html"><li>Support</li></a>
+            </ul>
+            <div class="navicon">
+                <a href="tea17.html" class="navicon1"><i class='bx bxs-user' style='color:#fffb45'  ></i></a>
+                <i class='bx bxs-cart' style='color:#f9f544'  ></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banimg">
+            <img src="/Images/Personal Care.png" alt="">
+        </div>
+    </div>
+
+<!-- main section -->
+
+    <div class="main">
+        <div>
+        <div class="categorie">
+            <h2>Categories</h2>
+            <h2><input type="radio">Teas & Infusion</h2>
+            <ul>
+                <li>Green Tea</li>
+                <li>Wellness Tea</li>
+                <li>Infusion</li>
+            </ul>
+            <h2><input type="radio">Health & Wellness</h2>
+            <ul>
+                <li>Condition Supplies</li>
+                <li>Daily Nutrition</li>
+            </ul>
+            <h2><input type="radio">Staple & Packed Food</h2>
+            <h2><input type="radio">Pulses & Dhals</h2>
+            <h2><input type="radio">Personal Care</h2>
+            <ul>
+                <li>Body Care</li>
+                <li>Face Care</li>
+                <li>Hair Care</li>
+            </ul>
+            <h2><input type="radio">Detox</h2>
+        </div>
+        </div>
+        <div class="box2">
+            <div class="">
+                <h2 class="boxhead">BODY CARE</h2>
+                <div class="items">
+                <div class="subitem">
+                    <img src="Images/Frame 204.png" alt="">
+                    <p>ORGANIC NATURAL</p>
+                    <p>DETOX KIT</p>
+                    <P>₹1450.00</P>
+                    <a href="tea41.html"></a><button class="cartbtn">ADD TO CART</button>
+                </div>
+                <div class="subitem">
+                    <img src="/Images/CleanNEW7DAY.webp" alt="">
+                    <p>ORGANIC DETOX</p>
+                    <p>CARE</p>
+                    <P>₹369.00</P>
+                    <button class="cartbtn">ADD TO CART</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row7">
+        <div class="col-4">
+            <div>
+                <img src="Images/MN__2_-removebg-preview.png" alt="" width="80%">
+            </div>
+            <div>
+                <h3>INFORMATION</h3>
+                <p>About Us <br>Contact Us<br>Terms & Conditions<br>Terms of Service<br>Vision & Mission<br>FAQ's</p>
+            </div>
+        </div>
+        <div class="col9">
+            <div class="div2">
+                <h3>POLICY:</h3>
+                <p>Privacy Policy <br>Vision & Mission<br>Our Herb<br>Track your Orders</p>
+            </div>
+            <div>
+                <P class="p2">Follow Us @ 
+                    <img src="Images/Youtube.png" alt="">
+                    <img src="Images/Whatsapp.png" alt="">
+                    <img src="Images/Instagram.png" alt="">
+                    <img src="Images/Facebook.png" alt="">
+                    <img src="Images/Twitter.png" alt="">
+                </P>
+                <p>Copyright 2024 MN Organic India Pvt.Ltd</p>
+            </div>
+        </div>
+        <div class="col10">
+            <h3>Contact Us</h3>
+            <p><img src="Images/71-512-removebg-preview.png" alt="" width="10%">
+                info@mnorganicproducts.com
+            </p>
+            <p><img src="Images/9946328-removebg-preview.png" alt="" width="10%">
+                +91 9123456789
+            </p>
+            <p><img src="Images/free-yellow-circle-mail-symbol-icon-20547-thumb-removebg-preview.png" alt="" width="10%">
+                MN ORGANIC INDIA Pvt.Ltd.<br>
+                Unit No.123.7th Floor, Tower-B,<br>
+                XXX Towers ABC Nager<br>
+                Chennai-XXXXXX
+            </p>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: black;
+    }
+    .card1{
+        width: 820px;
+        margin-left: 210PX;
+        border-radius: 10px;
+        border: 1px solid;
+        background-image: url(/Images/leaf.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .card2{
+        margin: 50px 150px;
+        text-align: center;
+        height: 640px;
+        background-color: #6B8E23;
+    }
+    .imgdiv{
+        height: 160px;
+    }
+    .card2>div>img{
+        width: 40%;
+        height: 110%;
+    }
+    input{
+        width: 350px;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        border: 2px solid #FFD700;
+    }
+    button{
+        padding: 13px;
+        margin: 10px;
+        width: 120px;
+        border-radius: 10px;
+        background-color: #FFD700;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .card1 {
+        width: 90%; 
+        margin-left: 5%; 
+    }
+
+    .card2 {
+        margin: 20px; 
+        height: auto; 
+    }
+
+    .card2 > div > img {
+        width: 70%; 
+        height: auto; 
+    }
+
+    input {
+        width: 90%; 
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .card1 {
+        margin-left: 0; 
+    }
+
+    .card2 > div > img {
+        width: 100%; 
+    }
+
+    input {
+        font-size: 16px;
+        width: auto;
+    }
+
+    button {
+        font-size: 18px; 
+        width: auto;
+    }
+}
+</style>
+<body>
+    <div class="card1">
+        <div class="card2">
+            <div class="imgdiv">
+                <img src="Images/MN__2_-removebg-preview.png" alt="">
+            </div>
+            <input type="text" placeholder="name"><br>
+            <input type="number" placeholder="Number"><br>
+            <input type="email" placeholder="Enmail"><br>
+            <input type="password" placeholder="Password"><br>
+            <button>REGISTER</button>
+        </div>
+    </div>
+</body>
+</html>
